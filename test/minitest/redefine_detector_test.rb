@@ -12,6 +12,6 @@ class Minitest::RedefineDetectorTest < Minitest::Test
       end
     end
 
-    assert_match("test_name' was redefined", e.message)
+    assert_match("test_name' is already defined.", e.message)
   end
 end

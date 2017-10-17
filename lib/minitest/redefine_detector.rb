@@ -5,7 +5,7 @@ module Minitest
   module RedefineDetector
     class RedefineError < StandardError
       def initialize(name, trace)
-        super("'#{name}' was redefined.")
+        super("'#{name}' is already defined.")
         set_backtrace(trace)
       end
     end
